@@ -1,0 +1,54 @@
+
+				(function(d, w, s){
+			var l = function(){
+				var f = w.fanplayr = w.fanplayr || { _i:[] };
+				f.custom = f.custom || {};
+				var _ = f.custom;
+
+				f._i.push({
+					type: 'st',
+					accountKey: _.accountKey || 'c32c119110b909f3fce02b9106f5d50b',
+					applyToCartUrl: encodeURIComponent(_.applyToCartUrl || '//www.loriblu.com/index.php/fanplayr/coupon/add/code/%c/'),
+					deputizeUrl: encodeURIComponent(_.deputizeUrl || _.depitizeUrl || '//www.loriblu.com/index.php/fanplayr/coupon/deputize/a/%a/d/%d/'),
+					sessionCouponUrl: encodeURIComponent(_.sessionCouponUrl || '//www.loriblu.com/index.php/fanplayr/coupon/session/code/%c/'),
+					storeDomain: _.storeDomain || '',
+					data: {
+						lineItemCount: 0,
+						numItems: 0,
+						couponCode: '',
+						total: 0,
+						subTotal: 0,
+						discount: 0,
+						pageType: 'cat',
+						categoryId: '186',
+						categoryName: encodeURIComponent('Sneakers'),
+						productId: '',
+						productName: encodeURIComponent(''),
+
+						productPrice: encodeURIComponent(''),
+						productSku: encodeURIComponent(''),
+						productImage: encodeURIComponent(''),
+						productUrl: encodeURIComponent('//www.loriblu.com/index.php//'),
+
+						currency: '',
+						customerEmail: '',
+						customerId: '',
+						customerGroup: '0',
+						customerSegment: '',
+						shopType: 'magento',
+						version: 3,
+						products: '[]',
+
+						quoteId: ''
+					},
+					custom_data: w.fanplayrCustomData || {}
+				});
+				var js = d.createElement(s);
+				var fjs = d.getElementsByTagName(s)[0];
+				js.async = true;
+				js.src = 'https://d1q7pknmpq2wkm.cloudfront.net/js/my.fanplayr.com/fp_smart.js?' +
+				(new Date().getTime()); fjs.parentNode.insertBefore(js, fjs);
+			};
+							l();
+				})(document, window, 'script');
+		
